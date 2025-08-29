@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Chat Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h2>💌 Love Chat Simulator</h2>
+    </header>
+    
+    <main id="chatWindow"></main>
+
+    <div id="inputArea">
+      <input type="text" id="playerInput" placeholder="Ketik pesan...">
+      <button onclick="sendMessage()">Kirim</button>
+    </div>
+
+    <div id="devLogin">
+      <input type="password" id="devPass" placeholder="Password Dev">
+      <button onclick="checkDev()">Login Dev</button>
+    </div>
+
+    <div id="devTools" style="display:none;">
+      <h3>Developer Mode</h3>
+      <button onclick="addRP()">+100 RP</button>
+      <button onclick="unlockAll()">Unlock All Ending</button>
+      <button onclick="skipEvent()">Skip Event</button>
+      <button onclick="npcHappy()">NPC Happy</button>
+      <p id="devLog">[Dev Mode Nonaktif]</p>
+    </div>
+  </div>
+  
+  <script src="game.js"></script>
+</body>
+</html>
